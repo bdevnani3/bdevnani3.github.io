@@ -5,6 +5,9 @@
   
   <meta name="author" content="Bhavika Devnani">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
@@ -21,10 +24,10 @@
               <p style="text-align:center">
                 <name>Bhavika Devnani</name>
               </p>
-              <p>I'm a Machine Learning Engineer at <a href="https://machinelearning.apple.com/">Apple Machine Learning Research</a>.
+              <p>I'm a first year PhD student at <a href="https://faculty.cc.gatech.edu/~judy/">Hoffman AI Research Lab</a> at Georgia Tech. I'm advised by the wonderful Dr. Judy Hoffman.
               </p>
               <p>
-                Before Apple, I did my Master's degree at Georgia Tech, advised by the wonderful <a href="https://www.cc.gatech.edu/~judy/">Professor Judy Hoffman </a> where I worked on problems in Computer Vision and Multimodality. 
+                In the past, I've worked on Machine Learning research and engineering at <a href="https://machinelearning.apple.com/">Apple Machine Learning Research</a>, Quora and LinkedIn. 
               </p>
               <p style="text-align:center">
                 <a href="mailto:bhavika.devnani@gmail.com">Email</a> &nbsp/&nbsp
@@ -45,13 +48,51 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                Most of my work so far has been in Computer Vision and Multimodality, specifically in the limited supervision setting.
-                Currently, I'm interested in making foundational models (<a href="https://arxiv.org/abs/2103.00020">CLIP</a>, <a href="https://arxiv.org/abs/2102.12092">DALL-E</a>) flexible: finding ways in which we can make them more efficient to train and easily adaptable to downstream tasks.
+                I've worked on multimodal alignment across a variety of modalities (audio, text, image) for a variety of tasks (retrieval, navigation). 
+                I enjoy working with large foundational models. I'm always open to collaborations!
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="elsa_stop()" onmouseover="elsa_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='elsa_image'>
+                  <img src='images/contrastive_learning.png' width="160"></div>
+                <img src='images/contrastive_learning.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function elsa_start() {
+                  document.getElementById('elsa_image').style.opacity = "1";
+                }
+
+                function elsa_stop() {
+                  document.getElementById('elsa_image').style.opacity = "0";
+                }
+                elsa_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>ELSA: Learning Spatially-Aware Language and Audio Embeddings </papertitle>
+              <br>
+              <strong>Bhavika Devnani</strong>, 
+              Skyler Seto, 
+              Zakaria Aldeneh, 
+              Alessandro Toso,
+              Yelena Menyaylenko,
+              Barry-John Theobald,
+              Jonathan Sheaffer, 
+              Miguel Sarabia
+              <br>
+              <em>Under review at NeurIPS</em>, 2024
+              <p></p>
+              <p>
+                Generate dataset and train a model that aligns 3D spatial audio with open vocabulary captions.
+              </p>
+            </td>
+          </tr>	
 
           
           <tr onmouseout="zson_stop()" onmouseover="zson_start()">
@@ -100,11 +141,11 @@
               </div>
               <script type="text/javascript">
                 function bisa_start() {
-                  document.getElementById('zson_image').style.opacity = "1";
+                  document.getElementById('bisa_image').style.opacity = "1";
                 }
 
                 function bisa_stop() {
-                  document.getElementById('zson_image').style.opacity = "0";
+                  document.getElementById('bisa_image').style.opacity = "0";
                 }
                 bisa_stop()
               </script>
