@@ -14,163 +14,158 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Basic styling for layout and color scheme -->
-    <style>
-        body {
-            font-family: 'Merriweather', serif;
-            background-color: #f8f9fa;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            font-size: 14px; /* Reduced body font size */
-        }
+<style>
+    body {
+        font-family: 'Merriweather', serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
 
-        a {
-            color: #0056b3;
-            text-decoration: none;
-        }
+    a {
+        color: #0056b3;
+        text-decoration: none;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    a:hover {
+        text-decoration: underline;
+    }
 
-        /* Main container for centering the content */
-        .container {
-            width: 100%;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
+    /* Main container for centering the content */
+    .container {
+        width: 100%;
+        max-width: 700px; /* Reduced container width */
+        margin: auto;
+        padding: 20px;
+    }
 
-        /* Profile Section */
-        .profile-section {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid #e1e1e1;
-            padding-bottom: 40px;
-        }
+    /* Profile Section */
+    .profile-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 40px;
+    }
 
-        .profile-info {
-            flex: 1;
-            padding-right: 20px;
-        }
+    .profile-info {
+        flex: 1;
+        padding-right: 20px;
+    }
 
-        .profile-info h1 {
-            font-size: 1.8em; /* Reduced heading size */
-            margin: 0;
-            color: #222;
-            font-weight: 700;
-        }
+    .profile-info h1 {
+        font-size: 1.8em;
+        margin: 0;
+        color: #222;
+        font-weight: 700;
+    }
 
-        .profile-info p {
-            font-size: 1em; /* Reduced paragraph text size */
-            line-height: 1.6;
-            margin: 10px 0;
-            color: #555;
-        }
+    .profile-info p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin: 10px 0;
+        color: #555;
+    }
 
-        .profile-info .contact-links a {
-            margin-right: 15px;
-            font-size: 0.9em; /* Slightly reduced link text size */
-        }
+    .profile-info .contact-links a {
+        margin-right: 15px;
+        font-size: 0.9em;
+    }
 
-        .profile-photo {
-            flex: 0 0 180px; /* Slightly smaller image size */
-        }
+    .profile-photo {
+        flex: 0 0 250px; /* Increased image size */
+    }
 
-        .profile-photo img {
-            max-width: 100%;
-            height: auto;
-        }
+    .profile-photo img {
+        max-width: 100%;
+        height: auto;
+    }
 
-        /* News Section */
-        .news-section {
-            padding: 40px 0;
-            border-bottom: 1px solid #e1e1e1;
-        }
+    /* News Section */
+    .news-section {
+        padding: 40px 0;
+        border-bottom: 1px solid #e1e1e1;
+    }
 
-        .section-title {
-            font-size: 1.6em; /* Reduced section title size */
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #333;
-        }
+    .section-title {
+        font-size: 1.6em;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #333;
+    }
 
-        .news-item {
-            font-size: 0.9em; /* Reduced news item text size */
-            color: #555;
-            margin-bottom: 10px;
-        }
+    .news-item {
+        font-size: 0.9em;
+        color: #555;
+        margin-bottom: 10px;
+    }
 
-        .news-item strong {
-            font-weight: 700;
-            color: #222;
-        }
+    .news-item strong {
+        font-weight: 700;
+        color: #222;
+    }
 
-        /* Research Section */
-        .research-section {
-            padding: 40px 0;
-        }
+    /* Research Section */
+    .research-section {
+        padding: 40px 0;
+    }
 
-        /* Research paper styling */
-        .research-paper {
-            display: flex;
-            align-items: flex-start;
-            border-bottom: 1px solid #e1e1e1;
-            padding: 20px 0;
-        }
+    /* Research paper styling */
+    .research-paper {
+        display: flex;
+        align-items: flex-start;
+        padding: 20px 0; /* Removed border */
+    }
 
-        .research-paper:last-child {
-            border-bottom: none;
-        }
+    .research-paper img {
+        width: 150px; /* Consistent size for paper images */
+        margin-right: 20px;
+        height: auto;
+    }
 
-        .research-paper img {
-            width: 150px; /* Slightly smaller paper image size */
-            margin-right: 20px;
-            height: auto;
-        }
+    .paper-info {
+        flex: 1;
+    }
 
-        .paper-info {
-            flex: 1;
-        }
+    .paper-title {
+        font-size: 1.1em;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #0056b3;
+    }
 
-        .paper-title {
-            font-size: 1.1em; /* Reduced paper title size */
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #0056b3;
-        }
+    .paper-title:hover {
+        text-decoration: underline;
+    }
 
-        .paper-title:hover {
-            text-decoration: underline;
-        }
+    .paper-info p {
+        margin: 5px 0;
+        color: #555;
+        font-size: 0.9em;
+    }
 
-        .paper-info p {
-            margin: 5px 0;
-            color: #555;
-            font-size: 0.9em; /* Reduced paragraph text size for papers */
-        }
+    .paper-info strong {
+        color: #222;
+    }
 
-        .paper-info strong {
-            color: #222;
-        }
+    .paper-info .badge {
+        color: #27ae60;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
 
-        .paper-info .badge {
-            color: #27ae60;
-            font-weight: bold;
-            font-size: 0.9em; /* Reduced badge font size */
-        }
-
-        /* Footer quote */
-        .footer-quote {
-            font-style: italic;
-            color: #7f8c8d;
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em; /* Reduced footer quote size */
-        }
-    </style>
+    /* Footer quote */
+    .footer-quote {
+        font-style: italic;
+        color: #7f8c8d;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+    }
+</style>
 </head>
 
 <body>
