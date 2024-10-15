@@ -121,9 +121,12 @@
     }
 
     .research-paper img {
-        width: 150px; /* Consistent size for paper images */
+        width: 150px; /* Fixed width */
+        height: 150px; /* Fixed height */
+        object-fit: cover; /* Ensures images maintain aspect ratio and fill the box */
+        padding: 5px; /* Adds padding around the image */
+        background-color: #f8f9fa; /* Optional: background color for padding */
         margin-right: 20px;
-        height: auto;
     }
 
     .paper-info {
@@ -166,6 +169,7 @@
         font-size: 0.9em;
     }
 </style>
+
 </head>
 
 <body>
@@ -176,7 +180,8 @@
         <div class="profile-section">
             <div class="profile-info">
                 <h1>Bhavika Devnani</h1>
-                <p>I'm a first-year PhD student at the <a href="https://faculty.cc.gatech.edu/~judy/">Hoffman AI Research Lab</a> at Georgia Tech, advised by Dr. Judy Hoffman. Previously, I worked on machine learning problems at Apple, Quora, and LinkedIn.</p>
+                <p>I'm a first-year PhD student at the <a href="https://faculty.cc.gatech.edu/~judy/">Hoffman AI Research Lab</a> at Georgia Tech, advised by Dr. Judy Hoffman. I've been incredibly lucky to work on different facets of machine learning problems at Apple AI/ML Research, Quora, and LinkedIn.</p>
+                <p> I enjoy thinking about <strong>Multimodal Representation Learning</strong> and <strong>Efficiency</strong>.
                 <p class="contact-links">
                     <a href="mailto:bhavika.devnani@gmail.com">Email</a> |
                     <a href="data/BhavikaDevnaniCV.pdf">CV</a> |
@@ -194,16 +199,22 @@
             <div class="section-title">News</div>
             
             <div class="news-item">
-                <strong>[Oct 2024]</strong> ELSA accepted at NeurIPS 2024.
+                <strong>[Oct 2024]</strong> ELSA accepted at NeurIPS 2024!
             </div>
             <div class="news-item">
-                <strong>[Aug 2024]</strong> Started a PhD at Georgia Tech.
+                <strong>[Aug 2024]</strong> Started a PhD at Georgia Tech with Dr Judy Hoffman.
             </div>
             <div class="news-item">
-                <strong>[Dec 2022]</strong> Started working at Apple Research.
+                <strong>[Dec 2022]</strong> Started working at Apple AI/ML Research - led by Dr Samy Bengio.
             </div>
             <div class="news-item">
-                <strong>[Oct 2022]</strong> ZSON accepted at NeurIPS 2022.
+                <strong>[Oct 2022]</strong> ZSON accepted at NeurIPS 2022!
+            </div>
+            <div class="news-item">
+                <strong>[Nov 2022]</strong> BiSA wins best paper at NeurIPS 2022 - Vision Transformers Workshop!
+            </div>
+            <div class="news-item">
+                <strong>[Oct 2022]</strong> BiSA accepted at NeurIPS 2022 - Vision Transformers Workshop!
             </div>
         </div>
 
